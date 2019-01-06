@@ -1,7 +1,41 @@
 {
   "docs": {
     "Guides": [
-      "guides/getting-started"
+      "guides/getting-started",
+      "guides/addresses",
+      {
+        "type": "subcategory",
+        "label": "Routing",
+        "ids": [
+          "guides/routing-intro",
+          "guides/the-navigation-event",
+          "guides/basic-navigation-example",
+          "guides/navigation-with-route-hooks",
+          "guides/writing-a-route-hook",
+          "guides/router-redux-state"
+        ]
+      }
+    ],
+    "Components": [
+      "components/address",
+      "components/address-fields",
+      "components/address-form",
+      "components/address-list",
+      "components/address-selector",
+      "components/address-usage-checkboxes",
+      "components/form",
+      "components/page-view-dispatcher",
+      "components/redirect",
+      "components/view-route"
+    ],
+    "Enhancers": [
+      "enhancers/component-loader"
+    ],
+    "Utils": [
+      "utils/get-vertical-routes",
+      "utils/history",
+      "utils/validators",
+      "utils/verify-address"
     ]
   }
 }
