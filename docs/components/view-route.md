@@ -21,7 +21,7 @@ strict|bool|If `true`, trailing slashes matter when matching `path`|`false`
 
 **`view` props**
 
-See [`view` object](/docs/guides/Routing-redux-state.md#view) in the Routing API docs.
+See [`view` object](guides/routing/router-redux-state.md#view) in the Routing API docs.
 
 ### Gotcha: default `view` props
 

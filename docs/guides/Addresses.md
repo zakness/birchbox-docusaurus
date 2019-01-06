@@ -7,13 +7,13 @@ Addresses are an integral part of the Birchbox experience, as they would be for 
 
 ## Address Components
 
-- Use [Address](/docs/components/Address.md) if you want to display an address.
-- Use [AddressFields](/docs/components/AddressFields.md) if you want to capture an address *along with other data* in a form.
-- Use [AddressForm](/docs/components/AddressForm.md) if you want to only capture an address (i.e. submit & cancel buttons included).
-- Use [AddressList](/docs/components/AddressList.md) if you want to pick from a list of existing addresses.
-- Use [AddressSelector](/docs/components/AddressSelector.md) if you want to toggle between `AddressList` and `AddressFields`.
-- Use [AddressUsageCheckboxes](/docs/components/AddressSelector.md) for editing how an address is used by the system. For example for subscription shipping or default shop billing. Typically used with AddressFields.
+- Use [Address](components/address.md) if you want to display an address.
+- Use [AddressFields](components/address-fields.md) if you want to capture an address *along with other data* in a form.
+- Use [AddressForm](components/address-form.md) if you want to only capture an address (i.e. submit & cancel buttons included).
+- Use [AddressList](components/address-list.md) if you want to pick from a list of existing addresses.
+- Use [AddressSelector](components/address-selector.md) if you want to toggle between `AddressList` and `AddressFields`.
+- Use [AddressUsageCheckboxes](components/address-selector.md) for editing how an address is used by the system. For example for subscription shipping or default shop billing. Typically used with AddressFields.
 
 ## Address Utils
 
-- Use [`verifyAddress`](/docs/utils/verifyAddress.md) to verify an address with Smarty Streets before saving.
+- Use [`verifyAddress`](utils/verify-address.md) to verify an address with Smarty Streets before saving.

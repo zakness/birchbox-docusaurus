@@ -7,16 +7,16 @@ We use a combination of [React Router](https://reacttraining.com/react-router/we
 
 **Guides**
 
-- [The Navigation Event](/docs/guides/Routing-navigation-event.md)
-- [Basic Navigation Example](/docs/guides/Routing-nav-example-basic.md)
-- [Navigation with Route Hooks](/docs/guides/Routing-nav-example-routehook.md)
-- [Writing a Route Hook](/docs/guides/Routing-writing-routehook.md)
+- [The Navigation Event](guides/routing/the-navigation-event.md)
+- [Basic Navigation Example](guides/routing/basic-navigation-example.md)
+- [Navigation with Route Hooks](guides/routing/navigation-with-route-hooks.md)
+- [Writing a Route Hook](guides/routing/writing-a-route-hook.md)
 
 **API**
 
-- [`getVerticalRoutes`](/docs/utils/getVerticalRoutes.md)
-- [`history`](/docs/utils/history.md)
-- [`<PageViewDispatcher>`](/docs/components/PageViewDispatcher.md)
-- [`<Redirect>`](/docs/components/Redirect.md)
-- [`router` Redux state](/docs/guides/Routing-redux-state.md)
-- [`<ViewRoute>`](/docs/components/ViewRoute.md)
+- [`getVerticalRoutes`](utils/get-vertical-routes.md)
+- [`history`](utils/history.md)
+- [`<PageViewDispatcher>`](components/page-view-dispatcher.md)
+- [`<Redirect>`](components/redirect.md)
+- [`router` Redux state](guides/routing/router-redux-state.md)
+- [`<ViewRoute>`](components/view-route.md)

@@ -3,9 +3,9 @@ id: address-selector
 title: AddressSelector
 ---
 
-[`AddressSelector`](/src/components/Addresses/AddressSelector/index.js) toggles between [AddressFields](/docs/components/AddressFields.md) (enter new address) and [AddressList](/docs/components/AddressList.md) (existing addresses).
+[`AddressSelector`](/src/components/Addresses/AddressSelector/index.js) toggles between [AddressFields](components/address-fields.md) (enter new address) and [AddressList](components/address-list.md) (existing addresses).
 
-Not sure this is the right component for your use case? See [other address-related components](/docs/guides/Addresses.md).
+Not sure this is the right component for your use case? See [other address-related components](guides/addresses.md).
 
 ## Props
 

@@ -5,7 +5,7 @@ title: router Redux State
 
 ## `router`
 
-The `router` redux state is updated by [navigation event](/docs/guides/Routing-navigation-event.md) actions.
+The `router` redux state is updated by [navigation event](guides/routing/the-navigation-event.md) actions.
 
 Key|Type|Description
 ---|---|---
@@ -43,7 +43,7 @@ url|string|The matched portion of the URL. Useful for building nested <Link>s|`/
 
 ## `view`
 
-An object containing view-specific attributes that are set via props on [`<ViewRoute>`](/docs/components/ViewRoute.md) or by dispatching `VIEW_ROUTE_UPDATE`. Default values are defined as [`ViewRoute.defaultProps`](/docs/components/ViewRoute.md#gotcha-default-view-props).
+An object containing view-specific attributes that are set via props on [`<ViewRoute>`](components/view-route.md) or by dispatching `VIEW_ROUTE_UPDATE`. Default values are defined as [`ViewRoute.defaultProps`](components/view-route.md#gotcha-default-view-props).
 
 Key|Type|Description|Default
 ---|---|---|---
@@ -58,14 +58,14 @@ vertical|string|The view’s vertical. Can be left empty for unisex pages.|
 
 ## `router.next`
 
-The next `router` state while in a [navigation event](/docs/guides/Routing-navigation-event.md). These values are often inspected by route hooks.
+The next `router` state while in a [navigation event](guides/routing/the-navigation-event.md). These values are often inspected by route hooks.
 
 Key|Type|Description
 ---|---|---
 changed|[changed object](#routernextchanged)|Key/value pairs describing what part of the location has changed.
 location|[location object](#location)|The next location.
-match|[match object](#match)|The next match or `undefined` if a [`<ViewRoute>`](/docs/components/ViewRoute.md) has not matched yet.
-view|[view object](#view)|The next view props or `undefined` if a [`<ViewRoute>`](/docs/components/ViewRoute.md) has not matched yet.
+match|[match object](#match)|The next match or `undefined` if a [`<ViewRoute>`](components/view-route.md) has not matched yet.
+view|[view object](#view)|The next view props or `undefined` if a [`<ViewRoute>`](components/view-route.md) has not matched yet.
 
 ## `router.next.changed`
 

@@ -3,7 +3,7 @@ id: basic-navigation-example
 title: Basic Navigation Example
 ---
 
-To illustrate how routes are configured and how the [navigation event phases](/docs/guides/Routing-navigation-event.md) update Redux, let’s look at an extremely simple example app that uses our routing components with just two views: `<ViewA>` and `<ViewB>`:
+To illustrate how routes are configured and how the [navigation event phases](guides/routing/the-navigation-event.md) update Redux, let’s look at an extremely simple example app that uses our routing components with just two views: `<ViewA>` and `<ViewB>`:
 
 ```jsx
 import { Switch } from 'react-router-dom'
@@ -33,9 +33,9 @@ ReactDOM.render(
 )
 ```
 
-> Curious about `ComponentLoader`? Check out [the docs](/docs/enhancers/ComponentLoader.md).
+> Curious about `ComponentLoader`? Check out [the docs](enhancers/component-loader.md).
 
-Let’s say the user loads the app initially on `/a`. The initial app load navigation event has a few unique qualities, so let’s skip that for now and assume it’s been processed and the user is looking at `<ViewA>`. In this case the [`router` Redux state](/docs/guides/Routing-redux-state.md) looks like this:
+Let’s say the user loads the app initially on `/a`. The initial app load navigation event has a few unique qualities, so let’s skip that for now and assume it’s been processed and the user is looking at `<ViewA>`. In this case the [`router` Redux state](guides/routing/router-redux-state.md) looks like this:
 
 ```js
 {
@@ -55,7 +55,7 @@ Now let’s assume the user clicks a link to `/b`. This triggers a navigation ev
 
 ## (1) Location change
 
-First, since the location changed, React Router creates a new `location` object which causes the Router’s [`<LocationChangeDispatcher>`](/src/components/Routing/Router/LocationChangeDispatcher.js) to dispatch a `LOCATION_CHANGE` action. This sets `isNavigating` to `true` and creates a [`next` object](/docs/guides/Routing-redux-state.md#routernext):
+First, since the location changed, React Router creates a new `location` object which causes the Router’s [`<LocationChangeDispatcher>`](/src/components/Routing/Router/LocationChangeDispatcher.js) to dispatch a `LOCATION_CHANGE` action. This sets `isNavigating` to `true` and creates a [`next` object](guides/routing/router-redux-state.md#routernext):
 
 ```diff
  {
@@ -74,11 +74,11 @@ First, since the location changed, React Router creates a new `location` object 
  }
 ```
 
-Note that the root [`location`](/docs/guides/Routing-redux-state.md#location), [`match`](/docs/guides/Routing-redux-state.md#match), and [`view`](/docs/guides/Routing-redux-state.md#view) are unchanged, as the user is still looking at `<ViewA>` at this point.
+Note that the root [`location`](guides/routing/router-redux-state.md#location), [`match`](guides/routing/router-redux-state.md#match), and [`view`](guides/routing/router-redux-state.md#view) are unchanged, as the user is still looking at `<ViewA>` at this point.
 
 ## (2) View route match
 
-Then, `<Switch>` evaluates the new location and looks for a child [`<ViewRoute>`](/docs/components/ViewRoute.md) to render. Since `/b` matches the second `<ViewRoute>`, it mounts and dispatches `VIEW_ROUTE_MATCH`. This adds the route-specific data to `next`:
+Then, `<Switch>` evaluates the new location and looks for a child [`<ViewRoute>`](components/view-route.md) to render. Since `/b` matches the second `<ViewRoute>`, it mounts and dispatches `VIEW_ROUTE_MATCH`. This adds the route-specific data to `next`:
 
 ```diff
  {
@@ -99,7 +99,7 @@ Then, `<Switch>` evaluates the new location and looks for a child [`<ViewRoute>`
 
 ## (3) View mounts
 
-Finally, `<ViewRoute path='/b'>` renders its child, [`<PageViewDispatcher>`](/docs/components/PageViewDispatcher.md), which dispatches `PAGE_VIEW` and also renders its child, `<ViewB>`. This completes the navigation event, setting `isNavigating` to `false`, moving the current state into [`prev`](/docs/guides/Routing-redux-state.md#routerprev), moving the `next` into current, and bumping `pageViewCount`:
+Finally, `<ViewRoute path='/b'>` renders its child, [`<PageViewDispatcher>`](components/page-view-dispatcher.md), which dispatches `PAGE_VIEW` and also renders its child, `<ViewB>`. This completes the navigation event, setting `isNavigating` to `false`, moving the current state into [`prev`](guides/routing/router-redux-state.md#routerprev), moving the `next` into current, and bumping `pageViewCount`:
 
 ```diff
  {
@@ -131,4 +131,4 @@ Finally, `<ViewRoute path='/b'>` renders its child, [`<PageViewDispatcher>`](/do
 
 ----
 
-This concludes the basic navigation example. See the next guide, [Navigation with Route Hooks](/docs/guides/Routing-nav-example-routehook.md), for a more complicated (and common) scenario.
+This concludes the basic navigation example. See the next guide, [Navigation with Route Hooks](guides/routing/navigation-with-route-hooks.md), for a more complicated (and common) scenario.
