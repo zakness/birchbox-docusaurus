@@ -3,7 +3,7 @@ id: component-loader
 title: ComponentLoader
 ---
 
-[`ComponentLoader`](/src/enhancers/ComponentLoader/index.js) is a wrapper around [Loadable](https://github.com/thejameskyle/react-loadable) that provides features and a clean syntax for dynamically importing components via [import()](https://webpack.js.org/api/module-methods/#import-), a.k.a. [code splitting](https://webpack.js.org/guides/code-splitting/#dynamic-imports). By default, ComponentLoader sets a [MaskContainer](src/components/MaskContainer/index.js) as Loadable’s [LoadingComponent](https://github.com/thejameskyle/react-loadable/blob/master/README.md#creating-a-great-loading-component).
+[`ComponentLoader`](https://github.com/birchbox/bernard_black/blob/develop/src/enhancers/ComponentLoader/index.js) is a wrapper around [Loadable](https://github.com/thejameskyle/react-loadable) that provides features and a clean syntax for dynamically importing components via [import()](https://webpack.js.org/api/module-methods/#import-), a.k.a. [code splitting](https://webpack.js.org/guides/code-splitting/#dynamic-imports). By default, ComponentLoader sets a [MaskContainer](src/components/MaskContainer/index.js) as Loadable’s [LoadingComponent](https://github.com/thejameskyle/react-loadable/blob/master/README.md#creating-a-great-loading-component).
 
 > NB: `ComponentLoader` is a global module in the Bernard Black application.
 

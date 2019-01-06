@@ -3,12 +3,12 @@ id: writing-a-route-hook
 title: Writing a Route Hook
 ---
 
-In this document we’ll be building the [`<ProductViewLoader>`](/src/components/RouteHooks/ProductViewLoader.js) route hook from scratch to demonstrate the following concepts:
-- Loading the primary view-specific data before the view mounts (and showing [`<PageNotFound>`](/src/components/PageNotFound/index.js) if it fails)
+In this document we’ll be building the [`<ProductViewLoader>`](https://github.com/birchbox/bernard_black/blob/develop/src/components/RouteHooks/ProductViewLoader.js) route hook from scratch to demonstrate the following concepts:
+- Loading the primary view-specific data before the view mounts (and showing [`<PageNotFound>`](https://github.com/birchbox/bernard_black/blob/develop/src/components/PageNotFound/index.js) if it fails)
 - Updating [`router.next`](guides/routing/router-redux-state.md#routernext) after the route matches but before the view mounts
 - Adding view-specific params to the `page-view` logging event
 
-We’ll use the desire to simplify [`<ProductView>`](/src/views/catalog/ProductView/index.js) specifically as the motivation for building `<ProductViewLoader>`.
+We’ll use the desire to simplify [`<ProductView>`](https://github.com/birchbox/bernard_black/blob/develop/src/views/catalog/ProductView/index.js) specifically as the motivation for building `<ProductViewLoader>`.
 
 ## Loading view-specific data
 

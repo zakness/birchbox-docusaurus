@@ -55,7 +55,7 @@ Now let’s assume the user clicks a link to `/b`. This triggers a navigation ev
 
 ## (1) Location change
 
-First, since the location changed, React Router creates a new `location` object which causes the Router’s [`<LocationChangeDispatcher>`](/src/components/Routing/Router/LocationChangeDispatcher.js) to dispatch a `LOCATION_CHANGE` action. This sets `isNavigating` to `true` and creates a [`next` object](guides/routing/router-redux-state.md#routernext):
+First, since the location changed, React Router creates a new `location` object which causes the Router’s [`<LocationChangeDispatcher>`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Routing/Router/LocationChangeDispatcher.js) to dispatch a `LOCATION_CHANGE` action. This sets `isNavigating` to `true` and creates a [`next` object](guides/routing/router-redux-state.md#routernext):
 
 ```diff
  {

@@ -3,7 +3,7 @@ id: address-form
 title: AddressForm
 ---
 
-[`AddressForm`](/src/components/Addresses/AddressForm/index.js) is a form that capture an address. Essentially wraps [AddressFields](components/address-fields.md) in a [Form](components/form.md) with submit and cancel buttons.
+[`AddressForm`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Addresses/AddressForm/index.js) is a form that capture an address. Essentially wraps [AddressFields](components/address-fields.md) in a [Form](components/form.md) with submit and cancel buttons.
 
 Not sure this is the right component for your use case? See [other address-related components](guides/addresses.md).
 

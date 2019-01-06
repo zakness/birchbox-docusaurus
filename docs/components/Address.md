@@ -3,7 +3,7 @@ id: address
 title: Address
 ---
 
-[`Address`](/src/components/Addresses/Address/index.js) is a component for displaying an address with standard formatting.
+[`Address`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Addresses/Address/index.js) is a component for displaying an address with standard formatting.
 
 Not sure this is the right component for your use case? See [other address-related components](guides/addresses.md).
 

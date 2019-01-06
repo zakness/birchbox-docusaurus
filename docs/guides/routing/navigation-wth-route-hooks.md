@@ -7,7 +7,7 @@ Route hooks are components that make sure the user has access to a view and redi
 
 We’ll start with the app from our [basic navigation example](guides/routing/basic-navigation-example.md) and add a new constraint: The user must be logged in to see `<ViewB>`. If they aren’t logged in, they will be redirected to `<LoginView>` to log in.
 
-To accomplish this, we’ll wrap `<ViewB>`’s `<PageViewDispatcher>` with a [`<RequireAuth>`](/src/components/RouteHooks/RequireAuth.js) route hook:
+To accomplish this, we’ll wrap `<ViewB>`’s `<PageViewDispatcher>` with a [`<RequireAuth>`](https://github.com/birchbox/bernard_black/blob/develop/src/components/RouteHooks/RequireAuth.js) route hook:
 
 ```diff
   import { Switch } from 'react-router-dom'
@@ -53,6 +53,6 @@ As in the basic example, let’s start with the user logged out on `/a`. When th
 
 This is the crux of a route hook’s design: Perform some checks (and/or optionally download some data) and only render `children` when everything is in order. This way we separate the routing logic from the view render logic, allowing view components to be simpler. In other words, views can assume that if they are mounted, they are allowed to be viewed.
 
-Back to our scenario. The user has just been redirected to `/sign-in`, which means `LOCATION_CHANGE` has been dispatched and `<ViewRoute path='/sign-in'>` has mounted and dispatched `VIEW_ROUTE_MATCH`. Now [`<DisallowAuth>`](/src/components/RouteHooks/DisallowAuth.js) is mounted, which just performs a pass-through render of its `children` since the user is not logged in. `PAGE_VIEW` is dispatched and `<LoginView>` is mounted.
+Back to our scenario. The user has just been redirected to `/sign-in`, which means `LOCATION_CHANGE` has been dispatched and `<ViewRoute path='/sign-in'>` has mounted and dispatched `VIEW_ROUTE_MATCH`. Now [`<DisallowAuth>`](https://github.com/birchbox/bernard_black/blob/develop/src/components/RouteHooks/DisallowAuth.js) is mounted, which just performs a pass-through render of its `children` since the user is not logged in. `PAGE_VIEW` is dispatched and `<LoginView>` is mounted.
 
 Finally, the user logs in and then (one presumes) is redirected to `/b`, which triggers a navigation event that successfully passes through `<RequireAuth>` and lands on `<ViewB>`.

@@ -3,7 +3,7 @@ id: address-selector
 title: AddressSelector
 ---
 
-[`AddressSelector`](/src/components/Addresses/AddressSelector/index.js) toggles between [AddressFields](components/address-fields.md) (enter new address) and [AddressList](components/address-list.md) (existing addresses).
+[`AddressSelector`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Addresses/AddressSelector/index.js) toggles between [AddressFields](components/address-fields.md) (enter new address) and [AddressList](components/address-list.md) (existing addresses).
 
 Not sure this is the right component for your use case? See [other address-related components](guides/addresses.md).
 
@@ -23,4 +23,4 @@ The component switches between its two modes by checking the existing of a field
 
 ## Example implementation
 
-- [CheckoutView/AddNewCreditCard](/src/views/checkout/CheckoutView/AddNewCreditCard/index.js) — Choosing to use a new credit card in checkout.
+- [CheckoutView/AddNewCreditCard](https://github.com/birchbox/bernard_black/blob/develop/src/views/checkout/CheckoutView/AddNewCreditCard/index.js) — Choosing to use a new credit card in checkout.

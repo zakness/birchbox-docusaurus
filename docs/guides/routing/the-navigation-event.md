@@ -9,7 +9,7 @@ When we talk routing, we’re typically talking about one thing: handling a navi
 2. The new location is matched to a potential view based on pathname. Optionally, checks are performed to determine if the user can access the view (go to next phase) or should be redirected elsewhere (go back to phase 1). These checks can be async if they require data to be downloaded.
 3. The view mounts, allowing the user to see the page at the given location.
 
-In our codebase these phases correspond respectively to the following Redux actions that update the [`router`](/src/reducers/router.js) Redux state:
+In our codebase these phases correspond respectively to the following Redux actions that update the [`router`](https://github.com/birchbox/bernard_black/blob/develop/src/reducers/router.js) Redux state:
 
 1. `LOCATION_CHANGE`
 2. `VIEW_ROUTE_MATCH`

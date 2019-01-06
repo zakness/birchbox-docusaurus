@@ -3,7 +3,7 @@ id: page-view-dispatcher
 title: PageViewDispatcher
 ---
 
-When [`<PageViewDispatcher>`](/src/components/Routing/PageViewDispatcher/index.js) mounts or renders with a new [`location`](guides/routing/router-redux-state.md#location) it disptaches `PAGE_VIEW`, signifying that we have viewed a new page (the last phase of a [navigation event](guides/routing/the-navigation-event.md)).
+When [`<PageViewDispatcher>`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Routing/PageViewDispatcher/index.js) mounts or renders with a new [`location`](guides/routing/router-redux-state.md#location) it disptaches `PAGE_VIEW`, signifying that we have viewed a new page (the last phase of a [navigation event](guides/routing/the-navigation-event.md)).
 
 `<PageViewDispatcher>` is typically the direct parent of a view component.
 

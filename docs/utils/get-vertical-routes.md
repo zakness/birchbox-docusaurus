@@ -3,7 +3,7 @@ id: get-vertical-routes
 title: getVerticalRoutes
 ---
 
-[`getVerticalRoutes`](/src/components/Routing/getVerticalRoutes/index.js) is a convenience method for defining routes for a single view that should be rendered at `/women` and `/men` subroutes in `COM`.
+[`getVerticalRoutes`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Routing/getVerticalRoutes/index.js) is a convenience method for defining routes for a single view that should be rendered at `/women` and `/men` subroutes in `COM`.
 
 Take `ShopView` for example. In `ES`, `ShopView` is rendered at `/tienda`. In `UK`, `ShopView` is rendered at `/shop`. But in `COM`, `ShopView` is rendered at `/shop/women` and `/shop/men`. Furthermore, in `COM`, `/shop` should redirect to `/shop/women` or `/shop/men` depending on the UI vertical.
 
@@ -19,10 +19,10 @@ getVerticalRoutes(options) => array<ViewRoute>
 
 Key|Type|Description|Default
 ---|---|---|---
-pathBase|string\|(vertical) => string|If a string it should be the base of the path to which `/<vertical>` will be appended in `COM` (or just the actual path in `ES` and `UK`). If a function, it will be passed the vertical and should return the correct path. Typically the function form is used, as it maps directly to the ones defined in the [`URLS`](/src/constants/urls-com.js) constants.|
+pathBase|string\|(vertical) => string|If a string it should be the base of the path to which `/<vertical>` will be appended in `COM` (or just the actual path in `ES` and `UK`). If a function, it will be passed the vertical and should return the correct path. Typically the function form is used, as it maps directly to the ones defined in the [`URLS`](https://github.com/birchbox/bernard_black/blob/develop/src/constants/urls-com.js) constants.|
 pathSuffix|string|Other path segment(s) to be appended after `/<vertical>`.|`''`
 redirect|bool|If `true`, the base path will redirect to one of the vertical subroutes. Switch this off if you don’t want this ‘vertical default’ feature.|`true`
-requireAuth|bool|If `true`, wraps `children` in [`RequireAuth`](/src/components/RouteHooks/RequireAuth.js). Useful if you want the vertical redirect to be based on the user’s preferred vertical, for example for subscription-related routes.|`false`
+requireAuth|bool|If `true`, wraps `children` in [`RequireAuth`](https://github.com/birchbox/bernard_black/blob/develop/src/components/RouteHooks/RequireAuth.js). Useful if you want the vertical redirect to be based on the user’s preferred vertical, for example for subscription-related routes.|`false`
 children|node|The children that each `ViewRoute` will render|
 ...props|various|Other props that get passed directly to each `ViewRoute`|
 

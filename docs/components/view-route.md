@@ -3,7 +3,7 @@ id: view-route
 title: ViewRoute
 ---
 
-[`<ViewRoute>`](/src/components/Routing/ViewRoute/index.js) is a wrapper around [React Router’s `<Route>`](https://reacttraining.com/react-router/web/api/Route) that is used specifically for view components.
+[`<ViewRoute>`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Routing/ViewRoute/index.js) is a wrapper around [React Router’s `<Route>`](https://reacttraining.com/react-router/web/api/Route) that is used specifically for view components.
 
 When `<ViewRoute>` mounts (or is re-rendered with a different location), it will dispatch `VIEW_ROUTE_MATCH`, which adds the `match` and `view` objects to the `router.next` Redux state.
 

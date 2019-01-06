@@ -3,7 +3,7 @@ id: address-usage-checkboxes
 title: AddressUsageCheckboxes
 ---
 
-[`AddressUsageCheckboxes`](/src/components/Addresses/AddressUsageCheckboxes/index.js) is a group of checkboxes that represent how an address is used by the system. For example for subscription shipping or default shop billing. Uses [`Form2Beta`](components/form.md) paradigms. This component is typically used with [AddressFields](components/address-fields.md).
+[`AddressUsageCheckboxes`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Addresses/AddressUsageCheckboxes/index.js) is a group of checkboxes that represent how an address is used by the system. For example for subscription shipping or default shop billing. Uses [`Form2Beta`](components/form.md) paradigms. This component is typically used with [AddressFields](components/address-fields.md).
 
 Not sure this is the right component for your use case? See [other address-related components](guides/addresses.md).
 
@@ -30,4 +30,4 @@ onChange|(data) => ?|Handles changes to field data. Typically passed down from p
 
 ## Example implementation
 
-- [MyAccountView/AddressForm](/src/views/account/MyAccountView/AddressDetails/AddressForm/index.js) — An address form for editing a user’s saved address.
+- [MyAccountView/AddressForm](https://github.com/birchbox/bernard_black/blob/develop/src/views/account/MyAccountView/AddressDetails/AddressForm/index.js) — An address form for editing a user’s saved address.

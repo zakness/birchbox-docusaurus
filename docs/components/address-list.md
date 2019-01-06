@@ -3,7 +3,7 @@ id: address-list
 title: AddressList
 ---
 
-[`AddressList`](/src/components/Addresses/AddressList/index.js) displays a list of addresses, allowing the user to pick one.
+[`AddressList`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Addresses/AddressList/index.js) displays a list of addresses, allowing the user to pick one.
 
 Not sure this is the right component for your use case? See [other address-related components](guides/addresses.md).
 

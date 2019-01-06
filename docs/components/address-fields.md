@@ -3,7 +3,7 @@ id: address-fields
 title: AddressFields
 ---
 
-[`AddressFields`](/src/components/Addresses/AddressFields/index.js) is a group of fields that capture an address. Uses [`Form2Beta`](components/form.md) paradigms. Use this component if you want to capture an address *along with other data* in a form.
+[`AddressFields`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Addresses/AddressFields/index.js) is a group of fields that capture an address. Uses [`Form2Beta`](components/form.md) paradigms. Use this component if you want to capture an address *along with other data* in a form.
 
 Not sure this is the right component for your use case? See [other address-related components](guides/addresses.md).
 
@@ -36,4 +36,4 @@ regionValueFormat | oneOf('regionCode', 'name')| This property determine if sele
 
 ## Example implementation
 
-- [components/AddressForm](/src/components/Addresses/AddressForm/index.js) — A generic address form for capturing basic address data.
+- [components/AddressForm](https://github.com/birchbox/bernard_black/blob/develop/src/components/Addresses/AddressForm/index.js) — A generic address form for capturing basic address data.

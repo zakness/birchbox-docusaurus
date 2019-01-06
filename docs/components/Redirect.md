@@ -3,7 +3,7 @@ id: redirect
 title: Redirect
 ---
 
-[`<Redirect>`](/src/components/Routing/Redirect/index.js) is a wrapper around [React Router’s `<Redirect>`](https://reacttraining.com/react-router/web/api/Redirect) that allows for preserving the query string when the redirect executes.
+[`<Redirect>`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Routing/Redirect/index.js) is a wrapper around [React Router’s `<Redirect>`](https://reacttraining.com/react-router/web/api/Redirect) that allows for preserving the query string when the redirect executes.
 
 To avoid confusion, this component should always be used instead of the one provided by React Router.
 

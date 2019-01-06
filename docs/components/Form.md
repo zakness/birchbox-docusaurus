@@ -3,7 +3,7 @@ id: form
 title: Form2Beta Form
 ---
 
-[`Form`](/src/components/Form2Beta/Form/index.js) is a form component used to provide form data and functionality to child components.
+[`Form`](https://github.com/birchbox/bernard_black/blob/develop/src/components/Form2Beta/Form/index.js) is a form component used to provide form data and functionality to child components.
 
 Familiar with the concepts? [Skip down to the props section.](#props)
 
@@ -139,9 +139,9 @@ value|any|The field’s current value.|
 
 ## Example implementations
 
-- [views/account/ResetPasswordView] (/src/views/account/ResetPasswordView/index.js) — A simple form to get you started with the minimal wiring up that's required.
-- [components/AddressForm](/src/components/Addresses/AddressForm/index.js) — A generic address form for capturing basic address data.
-- [CheckoutView/AddNewCreditCard](/src/views/checkout/CheckoutView/AddNewCreditCard/index.js) — Choosing to use a new credit card in checkout.
+- [views/account/ResetPasswordView] (https://github.com/birchbox/bernard_black/blob/develop/src/views/account/ResetPasswordView/index.js) — A simple form to get you started with the minimal wiring up that's required.
+- [components/AddressForm](https://github.com/birchbox/bernard_black/blob/develop/src/components/Addresses/AddressForm/index.js) — A generic address form for capturing basic address data.
+- [CheckoutView/AddNewCreditCard](https://github.com/birchbox/bernard_black/blob/develop/src/views/checkout/CheckoutView/AddNewCreditCard/index.js) — Choosing to use a new credit card in checkout.
 
 ## Why ‘beta’?
 
