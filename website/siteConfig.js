@@ -82,6 +82,8 @@ const siteConfig = {
   // template. For example, if you need your repo's URL...
   //   repoUrl: 'https://github.com/facebook/test-site',
 
+  scrollToTop: true,
+
   algolia: {
     apiKey: 'my-api-key',
     indexName: 'my-index-name',
