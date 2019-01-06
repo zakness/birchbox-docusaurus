@@ -12,10 +12,7 @@ const siteConfig = {
   title: 'Bernard Docs', // Title for your website.
   tagline: 'Evaludating Docusarus dev docs for Birchbox',
   url: 'https://zakness.github.io', // Your website URL
-  baseUrl: '/birchbox-docusaurus', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
+  baseUrl: '/birchbox-docusaurus/', // Base URL for your project */
 
   // Used for publishing and more
   projectName: 'birchbox-docusaurus',
