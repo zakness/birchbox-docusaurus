@@ -11,15 +11,15 @@
 const siteConfig = {
   title: 'Bernard Docs', // Title for your website.
   tagline: 'Evaludating Docusarus dev docs for Birchbox',
-  url: 'https://docs.team.birchbox.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  url: 'https://zakness.github.io', // Your website URL
+  baseUrl: '/birchbox-docusaurus', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
   projectName: 'birchbox-docusaurus',
-  organizationName: 'birchbox',
+  organizationName: 'zakness',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
