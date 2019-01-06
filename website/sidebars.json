@@ -7,12 +7,12 @@
         "type": "subcategory",
         "label": "Routing",
         "ids": [
-          "guides/routing-intro",
-          "guides/the-navigation-event",
-          "guides/basic-navigation-example",
-          "guides/navigation-with-route-hooks",
-          "guides/writing-a-route-hook",
-          "guides/router-redux-state"
+          "guides/routing/routing-intro",
+          "guides/routing/the-navigation-event",
+          "guides/routing/basic-navigation-example",
+          "guides/routing/navigation-with-route-hooks",
+          "guides/routing/writing-a-route-hook",
+          "guides/routing/router-redux-state"
         ]
       }
     ],
