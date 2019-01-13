@@ -85,8 +85,8 @@ const siteConfig = {
   scrollToTop: true,
 
   algolia: {
-    apiKey: 'my-api-key',
-    indexName: 'my-index-name',
+    apiKey: 'bd6552ca31f511c6f1e9522b6cce53f1',
+    indexName: 'docusaurus',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
 };
