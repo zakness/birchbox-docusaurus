@@ -85,8 +85,8 @@ const siteConfig = {
   scrollToTop: true,
 
   algolia: {
-    apiKey: 'bd6552ca31f511c6f1e9522b6cce53f1',
-    indexName: 'docusaurus',
+    apiKey: '92efc864627d635ecac2046efcef479c',
+    indexName: 'zakness_birchbox',
     algoliaOptions: {} // Optional, if provided by Algolia
   },
 };
